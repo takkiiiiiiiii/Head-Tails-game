@@ -9,6 +9,10 @@ import(
 func main() {
     head:= 0 
     tail := 0
+    var name string
+    fmt.Println("Who are you?")
+    fmt.Scan(&name)
+    fmt.Println("Hello,", name, "!")
     fmt.Println("Tossing a coin...")
     coin := make([]int, 3)
     rand.Seed(time.Now().UnixNano())
